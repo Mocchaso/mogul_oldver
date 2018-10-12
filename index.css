@@ -1,0 +1,33 @@
+.header {
+    width: 250px;
+    height: 70px;
+    text-align: center; /* テキストを横方向に中央揃え */
+    margin: 0 auto; 
+}
+
+.canvas_wrapper {
+    display: table;
+    margin: 0 auto;
+}
+
+#mogul_canvas {
+    outline: 3px solid; /* borderと異なり、outlineはボーダー領域を作らない */
+    background-color: rgb(72, 221, 162);
+    margin: 0 auto;
+    /*
+    margin: 0 auto; ... 中央揃え反映されず -> .canvas_wrapperにdisplay: table;を追加 -> 反映された
+    transform ... 中央揃えはできたが、canvas_wrapperの高さが無くなり、bodyが潰れてしまった
+    参考サイト：
+    https://qiita.com/KAMEch/items/b52c5e23212b8fef81a7
+    https://www.sejuku.net/blog/55523
+    https://www.nishi2002.com/16106.html
+    */
+}
+
+
+.footer {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
